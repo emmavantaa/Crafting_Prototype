@@ -11,16 +11,17 @@ public class Items : MonoBehaviour
 
     public void AddItem(int itemID)
     {
-        itemData[0].amount += 1;
+        itemData[0].amount ++;
         Debug.Log("You added one" + itemData[0].itemName + " " + itemData[0].amount);
 
-        itemData[1].amount += 1;
+        itemData[1].amount ++;
         Debug.Log("You added one" + itemData[1].itemName + " " + itemData[1].amount);
     }
 
     public void RemoveItem(int itemID)
     {
-        itemData[0].amount -= 1;
+        itemData[0].amount --;
+        itemData[1].amount --;
     }
 
 
